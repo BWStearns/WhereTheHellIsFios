@@ -1,4 +1,4 @@
-WhereTheHellIsFios
+Where The Hell Is Fios?
 ==================
 
 ## A Scraper to grab Verizon FIOS data from one of their web APIs. Should be interesting to analyze.
