@@ -5,7 +5,7 @@ WhereTheHellIsFios
 ###PSA: Wow that was fast. The API endpoint that the scraper called has been shut down. Less than 12 hours later. I didn't even get to send them a courtesy heads up (was going to but it was late, gotta sleep eventually).
 
 ### About
-The exposed API call was in the mapping tool of a site called musthavefios.verizon.com and it accessed `http://musthavefios.verizon.com/scripts/data/fios_geo_data_compact_nyc.js` (using nyc as an example).
+The exposed API call was in the mapping tool of a site called musthavefios.verizon.com and it accessed `http://musthavefios.verizon.com/scripts/data/fios_geo_data_compact_nyc.js` (using nyc as an example). Since it's dead now, [Wayback has it from 8/1/2014](https://web.archive.org/web/20140801122542/http://musthavefios.verizon.com/default.aspx?region=nyc).
 
 After looking through the XHR requests I found a bunch of other region data was sent to my browser for the following cities: albany, baltimore, boston, buffalo, centralpa, dallas, dc, harrisburg, la, nyc, palmsprings, philly, pittsburgh, providence, richmond, southva, sussex, syracuse, and tampa
 
