@@ -11,6 +11,9 @@ After looking through the XHR requests I found a bunch of other region data was 
 
 The exact call was of the form: musthavefios.verizon.com/default.aspx?region=nyc
 
+###Disclaimer on Data
+Not entirely sure if this is all buildings wired for FiOS in those areas, it really seems too skimpy a list but that's all the info that the maps on musthavefios had in them.
+
 ###Why/How?
 
 So yeah. Last night I spoke with a lovely verizon rep (no, really she was extremely nice) with whom I was a little more curt than courtesy should allow. She informed me that the network was adding *no* new addresses "through 2015", now that phrasing is a bit ambiguous, but I took it as the worst meaning that I have 0 hope of having decent internet speeds until 2016, so I wanted to see where exactly I would have to move if I wanted faster internet and began looking through their marketing sites for detailed availability data. First I looked at the XHR data on their "Is FiOS available?" page. This turned out to be a dead end. The address format looks like this (urlencoded, also changed address):
