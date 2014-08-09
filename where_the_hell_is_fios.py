@@ -60,7 +60,7 @@ class VerizonData(object):
                         l["region"] = c
                         alllll_the_cities[l["a"]] = l
                 except Exception, e:
-                    print "FUCKING ERROR: {0}".format(e)
+                    print "ERROR: {0}".format(e)
         return alllll_the_cities
 
 
