@@ -20,7 +20,7 @@ class VerizonData(object):
 
     def _save(self):
         json_file = file(self.json_file_name, "w")
-        json_file.write(json.dumps({"regions": self.regions, "locations": self.locations}))
+        json_file.write(json.dumps(self._raw))
         json_file.close()
 
     def _load(self):
