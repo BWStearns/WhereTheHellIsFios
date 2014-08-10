@@ -1,4 +1,4 @@
-WhereTheHellIsFios
+Where The Hell Is Fios?
 ==================
 
 ## A Scraper to grab Verizon FIOS data from one of their web APIs. Should be interesting to analyze.
@@ -9,7 +9,12 @@ The exposed API call was in the mapping tool of a site called musthavefios.veriz
 
 After looking through the XHR requests I found a bunch of other region data was sent to my browser for the following cities: albany, baltimore, boston, buffalo, centralpa, dallas, dc, harrisburg, la, nyc, palmsprings, philly, pittsburgh, providence, richmond, southva, sussex, syracuse, and tampa
 
-The exact call was of the form: musthavefios.verizon.com/default.aspx?region=nyc
+The exact endpoint was of the form: `"http://musthavefios.verizon.com/scripts/data/fios_geo_data_compact_{0}.js".format(rgn)`
+
+###Disclaimer on Data
+Not entirely sure if this is all buildings wired for FiOS in those areas, it really seems too skimpy a list but that's all the info that the maps on musthavefios had in them.
+
+It's unclear if this is a dynamic endpoint since it has a .js extension but there's plenty of weird choices in their other APIs so I'm not going to say I know for sure. It might just be data that they made available at the time and don't update. My *guess* is that it is updated because when they made that site they wanted to show the buildings in the then-expanding FiOS network, but again, that's just a SWAG and it does seem like a very small number of available addresses.
 
 ###Why/How?
 
