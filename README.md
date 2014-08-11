@@ -33,3 +33,13 @@ Next candidate was `http://fios.verizon.com/availability_post4.php` which takes 
 Eventually I went to the WayBackMachine and looked at Verizon's old promotional websites for FIOS and found a bunch of good candidate API endpoints that were still alive. I forget where exactly I found the link to musthavefios.verizon.com, but I think it was in some sales-funnel thing on one of the wayback sites, and when I visisted it and the map popped up SPECIFIC addresses I was wicked psyched. Now next time I move I will be able to cross-reference by FIOS availability without having to use Verizon's awful address picker.
 
 Map and possibly a blog post coming when I get to it, if someone wants to jump in and make one first, cheers!
+
+
+####Other Random Notes
+
+convert shapefiles to geojson: 
+
+	# Assuming you have brew installed
+	brew install gdal
+	# Replace name with the target shapefile
+	ogr2ogr -f GeoJSON -t_srs crs:84 [name].geojson [name].shp
