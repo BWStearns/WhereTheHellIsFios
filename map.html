@@ -11,11 +11,10 @@
   </style>
 </head>
 <body>
-  <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/bwstearns.j6oe0k9e/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYndzdGVhcm5zIiwiYSI6IjF3bkxRSU0ifQ.Slld_8rtV9zVodrsL2o1ug'></iframe>
   <div id='map'></div>
   <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoiYndzdGVhcm5zIiwiYSI6IjF3bkxRSU0ifQ.Slld_8rtV9zVodrsL2o1ug'
-    var map = L.mapbox.map('map', 'bwstearns.j6oe0k9e', {
+    var map = L.mapbox.map('map', 'bwstearns.j6on0f6b', {
       center: [40.7720918760227, -73.97283554077148],
       zoom: 14
     });
@@ -27,7 +26,9 @@
       icon: L.mapbox.marker.icon({
           'marker-size': 'small',
           'marker-symbol': 'star',
-          'marker-color': '#f44'
+          'marker-color': '#f44',
+          'title': l["n"],
+          'description': l['a']
       })
     }).addTo(map);
   }
