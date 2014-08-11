@@ -22,15 +22,18 @@
   
   for (loc in fiosLocations) {
     l = fiosLocations[loc]
-    L.marker([l["lat"], l["lng"]], {
+
+    var content = '<h2>' + l["n"] + '<\/h2>' + '<p>' + l["a"] + '<\/p>';
+
+    var mk = L.marker([l["lat"], l["lng"]], {
       icon: L.mapbox.marker.icon({
           'marker-size': 'small',
           'marker-symbol': 'star',
           'marker-color': '#f44',
-          'title': l["n"],
-          'description': l['a']
       })
-    }).addTo(map);
+    });
+    mk.addTo(map);
+    mk.bindPopup(content);
   }
   
   </script>
